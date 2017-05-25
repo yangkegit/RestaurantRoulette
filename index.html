@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RestaurantRoulette</title>
+    <meta name="description" content="A simple web app that gives you a randomized handful of restaurants near you.">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+    <body>
+    <header>
+        <h1>RestaurantRoulette</h1>
+    </header>
+    <main>
+        <section id="user-input">
+            <form id="user-location" method="post">
+                <label for="address">Location:</label>
+                <input id="form-location" type="text" name="location"  placeholder="e.g. 1600 Pennsylvania Ave, or 90210" size="30">
+                <!--<input id="radius" type="range" min="0" max="2", step="0.25"> -->
+                <button type="button" id="find-btn">Find Food</button>
+            </form>
+        </section>
+        <section id="results">
+            <div id="sidebar"></div>
+			<div id="map"></div>	
+		</section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqltgHzMQ-BWCGax5WsmQ_EI5mCCAGGck&libraries=places&callback=init"></script> 
+    </body>
+</html>

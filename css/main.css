@@ -1,0 +1,40 @@
+html{
+    background-color: #EFEFEF;
+}
+
+html, body, h1{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    height: calc(100% - 50px);
+}
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+#user-input {
+}
+
+#results{
+    width: 100%;
+    height: calc(100% - 28px);
+}
+
+#sidebar{
+    width: 200px;
+    height: 100%;
+    background-color: #FF383F;
+    float: left;
+    overflow: auto;
+}
+#map {
+    margin-left: 200px;
+    height: 100%;
+    background-color: #CAEBF2;
+}
